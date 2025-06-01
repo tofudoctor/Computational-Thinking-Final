@@ -1,0 +1,64 @@
+body {
+  padding-top: 70px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#aboutSection {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+/* 深色模式支援 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .navbar {
+    background-color: #1f1f1f !important;
+  }
+
+  .navbar .navbar-brand {
+    color: #ffffff !important;
+  }
+
+  .btn-outline-primary {
+    color: #0d6efd;
+    border-color: #0d6efd;
+  }
+
+  .btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: white;
+  }
+
+  #aboutSection {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    box-shadow: none;
+  }
+
+  .modal-content {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    background-color: #0d6efd;
+  }
+}
+
+#bar-container {
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 2rem;
+  width: 100%;
+  overflow: hidden;
+}
+.bar {
+  background-color: #0d6efd;
+}
